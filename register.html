@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+ 
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+<title>Sapne – Secure a child's future</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+
+ <link href="../css/bootstrap.min.css "rel="stylesheet" type="text/css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.4/css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <style>
+		 *{margin:0px;padding:0px;}
+		 html {
+          font-family: "Poppins";
+          color:#FFF;
+    }
+	body {
+   margin-top: 5px;
+      padding: 0;
+      background-color:#ffffff;
+      color:#FFF;  
+      color: #262626;
+      font-size: 16px;
+      line-height: 1.8;
+      font-family: "Poppins";
+      text-align: justify;
+}
+    i{
+          color:#FFF;
+    }
+		ul li {
+      display: inline-block;
+      font-weight:bold;
+	  
+}
+nav>img{ 
+      height:30px;  
+      width:90px;
+      float:left;  
+      color:transparent;
+}
+.v1{
+      float:right; 
+      right:0;
+}
+nav>ul li a {
+      color:#FFF;
+      text-decoration: none;
+      padding: 15px;
+      display: block;
+}
+nav>ul li a:hover {
+      color:#FFF;
+      text-decoration: none;
+      padding: 15px;
+      display: block;
+}
+nav>ul li:hover {      
+      color:#333;
+      background:blue;
+      text-decoration:none;
+}
+nav>ul ul {
+      position: absolute;
+      min-width: 200px;
+      background: #e46226;
+      display: none;
+}
+nav>ul ul li {
+      display: block;
+      background: rgb(22, 22, 22);
+}
+nav>ul li:hover ul {
+      display: block;
+}
+nav>ul li i {
+      color: #FFF;
+      float: right;
+      padding-left: 20px;
+}
+nav div {
+      
+      color: #FFF;
+font-size: 24px;
+      padding: 0.6em;
+      cursor: pointer;
+      display: none;
+	  
+}
+nav{
+	width:100%;
+	background:red;
+	height:55px;
+	position:fixed;
+      top:0;
+      z-index:20;
+      border-bottom:#e46226 solid 0px;
+      height:60px;
+}
+		 .carousel-item img{
+          height:100%;
+          width:100%;
+          }
+    .carousel-control-next-icon,.carousel-control-prev-icon{
+          height:10%;
+          width:10%;
+    }
+    .carousel-caption{
+          
+          color:white;
+          width:100%;
+          left:0;
+    }
+    
+    .carousel-indicator{
+          margin-bottom:25px;
+          left:50%;
+    }
+	.visionimg{height:200px;width:100%;}
+.vision{text-align:center;min-height:300px;}
+#k{border-radius:2%;border:0px solid black;}
+#c{
+    background-color:#bee7eb;
+    
+	padding-bottom:10px;
+}
+.visionhead{font-family: "Times New Roman", Times, serif;text-shadow:2px 2px pink;}
+#offer{background:red;margin-left:15px;color:white}
+#k:hover{box-shadow:0 0 10px 3px rgba(0,0,10,2);curser:pointer;}
+/*................Footer..................*/
+.footer-widgets {
+      position: relative;
+      padding: 30px 0 30px;
+      font-weight: 500;
+       color: #fff;
+      
+      background:red;
+      z-index: 0;
+      font-family: 'Poppins';
+  }
+
+  .footer-widgets::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index:-2;
+      width: 100%;
+      height: 101%;
+      color: white;
+  }
+  
+  .footer-widgets h2 {
+      margin-bottom: 40px;
+      font-size: 18px;
+      color: #fff;
+  }
+  
+  .footer-widgets ul {
+      padding: 12px 0 0;
+      margin: 0;
+      list-style: none;
+  }
+  
+  .footer-widgets ul li {
+      margin-bottom: 1px;
+      font-size: 14px;
+  }
+  
+  .footer-widgets ul li a {
+      color: #fff;
+      text-decoration: none;
+  }
+  
+  .footer-widgets ul li a:hover {
+      color:none;
+  }
+  
+  .foot-about p {
+      font-size: 14px;
+      line-height:2;
+      color: #9c9999;
+  }
+  
+  .foot-about ul li {
+      margin-right: 2px;
+  }
+  
+  .foot-about ul li a {
+      color: #fff;
+  }
+
+  .foot-useful ul li {
+      font-size: 14px;
+      margin-right: 2px;
+      line-height:2;
+      color: #9c9999;
+  }
+  .foot-contact ul li {
+      display: flex;
+      align-items: baseline;
+      margin-bottom: 15px;
+  }
+  
+  .foot-contact ul li .fa {
+      width: 28px;
+      margin-right: 10px;
+      font-size: 18px;
+      text-align: center;
+      color: #ff5a00;
+  }
+  
+  .foot-contact ul li span {
+      width: calc(100% - 3px);
+  }
+  
+  .section-heading .entry-title {
+      position: relative;
+      padding-bottom: 24px;
+      font-size: 36px;
+      font-weight: 600;
+  }
+  
+ h1{font-size:40px;color:white;margin-top:100px;color:black;} 
+ p{color:black;font-size:20px;} 
+ #head3{font-size:26px;color:black;margin-top:10px;} 
+ .glyphicon glyphicon-pencil{font-size:35px;float:right;margin-top:20px;} 
+ #fo{margin-top:0px;box-shadow:-1px 1px 60px 10px black;background:white;width:80%;} 
+  
+  
+  
+  
+  
+  
+  
+  
+ input[type=text]:focus, input[type=email]:focus,input[type=file]:focus { 
+   background-color: #ddd; 
+   outline: none; 
+ } 
+ input[type=file]{color:black;background:#fff;}
+  
+ button { 
+   background-color: #4CAF50; 
+   color: white; 
+   padding: 14px 20px; 
+   margin: 8px 0; 
+   border: none; 
+   cursor: pointer; 
+   width: 100%; 
+   opacity: 0.9; 
+ } 
+  
+ button:hover { 
+   opacity:1; 
+ } 
+  
+  
+
+  
+ .container { 
+   padding: 16px; 
+ } 
+  
+  
+ .modal { 
+   display: none;  
+   position: fixed;  
+   z-index: 1;  
+   left: 0; 
+   top: 0; 
+   width: 100%;  
+   height: 100%;  
+   overflow: auto;  
+   background-color: #fff;
+   padding-top: 50px; 
+   margin-top:50px;
+ } 
+  
+  
+ .modal-content { 
+   background-color: transparent; 
+   margin: 1% auto 15% auto;  
+   border: 0px solid #e46226;
+   width: 70%; 
+ } 
+  
+  
+ hr { 
+   border: 1px solid #f1f1f1; 
+   margin-bottom: 25px; 
+ } 
+  
+  
+ .close { 
+   position: absolute; 
+   right: 35px; 
+   top: 15px; 
+   font-size: 40px; 
+   font-weight: bold; 
+   color: #000; 
+ } 
+  
+ .close:hover, 
+ .close:focus { 
+   color:#000;
+   cursor: pointer; 
+ } 
+  
+  
+ .clearfix::after { 
+   content: ""; 
+   clear: both; 
+   display: table; 
+ } 
+  
+  
+ @media(max-width: 800px) { 
+   .cancelbtn,.signup { 
+     width: 100%; 
+   } 
+ .close{right:1px;} 
+ } 
+ #l{font-size:20px;padding-left:5px;color:#FFF;} 
+ #pr{padding:10px 10px;} 
+  
+  
+  
+ .join{padding-top:50px;} 
+  
+  
+ .join h2::after{content:'';background:black; 
+ display:block;height:3px;width:80px;margin:20px auto 5px;} 
+ .jh 
+ {text-align:center;} 
+ .c1{ 
+       padding-top:15px; 
+       padding-left:10px; 
+       padding-right:30%; 
+       padding-bottom:15px; 
+       background-color: rgba(0,0,0,0.9);  
+         
+       font-size: 30px;  
+       color:#e46226;} 
+  
+ @media(max-width: 768px){ 
+ .c1{padding-right:10px;} 
+  #fo{width:100%;}
+   .modal-content{width:100%;}
+ } 
+   
+ /*----------------------------------------------------*/ 
+ .register-btn 
+   { 
+       background-color:blue;  
+       color:#FFF;  
+       font-size:20px;  
+       font-weight:bold;  
+       margin-bottom:1%; 
+       display: inline-block; 
+ padding: 10px 50px; 
+  
+   } 
+    
+ .pj 
+ { 
+       color:#FFF; 
+       font-weight:100;  
+       text-align: justify;  
+       font-size: 20px;  
+ } 
+		</style>
+		</head>
+		<body>
+	<nav>            
+         <a href="index.php"><img src="logo2.png" style="margin-top:-2px;height:60px;width:80px;margin-right:2px;"></a>
+                        <div style="float:right; right:0px;">
+                              <i class="fa fa-bars navbar-right"></i>
+                        </div>
+                        <ul  style="float:right;">
+                        
+                              <li><a href="/">Home</a></li>	
+							  <li> <a  onclick="document.getElementById('id01').style.display='block'"style="color:white;">REGISTER NOW</a> </li>
+							  </ul>
+                    </nav>
+		<div class="container"style="height:60px;width:100%"></div>
+		
+		<div id="id01" class="modal"> 
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal" >&times;</span>
+      <form class="modal-content" method="post" action="volunteer_action_page.php"> 
+      
+      <div class="container-fluid" style="background:blue;background-size:100%;padding-left:10%;"> 
+            <div class="row" style="width:100%;"> 
+                  <div class="col-md-4">
+                  </div> 
+                  <div class="col-md-4">
+                  <center><h3 style="color:#FFF;">SHOP REGISTRATION FORM</h3></center><br/>
+                  </div> 
+                  <div class="col-md-4">
+                  </div> 
+            
+            </div>
+
+            <div class="row" > 
+                  <label class="col-md-3 control-label"id="l" ><b>Name</b></label> 
+                  <div class="col-md-8"> 
+                        <input type="text" class="form-control" name="volname" placeholder="Enter Full Name" required> 
+                  </div> 
+            </div> 
+
+            <br/>
+
+            <div class="row"> 
+                  <label  class="col-md-3 control-label" id="l" ><b>Email</b></label> 
+                  <div class="col-md-8"> 
+                        <input type="Email" class="form-control" name="volemail" placeholder="Enter Email" required> 
+                  </div> 
+            </div>
+ 
+            <br/>
+
+            <div class="row"> 
+                  <label class="col-md-3 control-label"id="l" ><b>Address</b></label> 
+                  <div class="col-md-8"> 
+                        <input type="text" class="form-control" name="voladdress" placeholder="Enter Address" required> 
+                  </div> 
+            </div> 
+
+            <br/>
+
+            <div class="row"> 
+                  <label for="mobile" class="col-md-3 control-label" id="l"><b>Contact</b></label> 
+                  <div class="col-md-8"> 
+                        <input type="text" class="form-control" name="volmobile" placeholder="Enter Mobile No" required> 
+                  </div> 
+            </div> 
+            <br/>
+              
+            <div class="row"> 
+                  <div class="col-md-10"> 
+                        <p style="color:#FFF;">By Registering you agree to our <a href="#" style="color:#e46226;">Terms & Privacy</a>.</p> 
+                  </div> 
+            </div> 
+            <div> 
+                  <center><button type="submit" style="background-color: red;">Register</button></center>
+            </div>  
+      </div> 
+</div> 
+
+  
+  
+  
+  
+  
+  
+  
+  
+        
+  
+        
+  
+       
+        
+     </div> 
+   </form></div> 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<br/>
+<footer class="site-footer">
+      <div class="footer-widgets">
+          <div class="container">
+              <div class="row">
+                  <div class="col-12 col-md-6 col-lg-4">
+                      <div class="foot-about">
+                          <h2><a class="foot-logo" href="index.php"><img src="logo2.png" style="width:200px;height:100px;" alt=""></a></h2>
+
+<p style="font-family: 'Poppins'; text-align: justify;color:white;">Terms and Conditions applied</p>
+                          <ul class="d-flex flex-wrap align-items-center">
+                              <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" style="font-size:30px;"></i></a></li> &nbsp;&nbsp;&nbsp;
+                              <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" style="font-size:30px;"></i></a></li>&nbsp;&nbsp;&nbsp;
+                              <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" style="font-size:30px;"></i></a></li>&nbsp;&nbsp;&nbsp;
+                              
+                              <li><a href="https://www.linkedin.com/in/" target="_blank"><i class="fa fa-linkedin" style="font-size:30px;"></i></a></li>&nbsp;&nbsp;&nbsp;
+							  
+                              <li><a href="https://www.linkedin.com/in/" target="_blank"><i class="fa fa-play" style="font-size:30px;"></i></a></li>&nbsp;&nbsp;&nbsp;
+                              
+                          </ul>
+                      </div>
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-4">
+                              <div class="panel-heading"><div class="section-heading">
+                                          <div class="entry-title">Useful Links</div>
+                                      </div></div>
+                        <div class="foot-useful">
+                      <ul>
+                          <li><a href="#">Subscribe</a></li><br>
+                          <li><a href="#">Shop Registration</a></li><br>
+                          <li><a href="#">Visit App</a></li><br>
+                          <li><a href="#">Contact Us</a></li><br>
+                         
+                      </ul>
+                  </div>
+                  </div>
+                  
+
+                  <div class="col-12 col-md-6 col-lg-3 ">
+                      <div class="foot-contact">
+                              <div class="panel-heading"><div class="section-heading">
+                                          <div class="entry-title">Reach us</div>
+                                      </div></div>
+
+                          <ul>
+                              <li><i class="fa fa-phone"style="color:white;"></i><span>+91 84470 58009</span></li>
+                              <li><i class="fa fa-envelope"style="color:white;"></i><span>mymart0@gmail.com</span></li>
+                              <li><i class="fa fa-map-marker" style="color:white;"></i><span>G-6/203 sector - 16,
+Rohini Delhi 89,
+New Delhi</span></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+		</body>
+		 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+		</html>
